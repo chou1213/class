@@ -12,7 +12,7 @@ function routerHandle(code, msg, json) {
     }
 }
 
-router.post('/user', ctx => {
+router.post('/api/user', ctx => {
     const { role } = ctx.headers;
     const { name, email } = ctx.request.body;
     let result = {};
