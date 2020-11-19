@@ -1,12 +1,12 @@
-const koa = require('koa');
+import koa from 'koa';
+import path from 'path';
+import helmet from 'koa-helmet';
+import statics from 'koa-static';
+import router from './routes/routes' // 合并路由
+
 const app = new koa();
-const path = require('path');
-const helmat = require('koa-helmet');
-const statics = require('koa-static');
 
-const router = require('./routes/routes'); // 合并路由
-
-app.use(helmat());
+app.use(helmet());
 app.use(statics(path.join(__dirname, '../public')));
 app.use(router());
 
