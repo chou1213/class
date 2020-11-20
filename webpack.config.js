@@ -3,6 +3,8 @@ const nodeExternals = require('webpack-node-externals');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
+debugger
+
 const webpackconfig = {
     target: 'node',
     mode: 'development',
