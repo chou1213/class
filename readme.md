@@ -5,3 +5,4 @@
 5. 配置loader
 6. 配置plugins
 7. 热编译，热刷新
+8. mode环境设置

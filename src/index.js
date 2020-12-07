@@ -1,2 +1,6 @@
 require('./index.scss');
-console.log('hello backgrounnd');
+if (process.env.NODE_ENV === 'development') {
+  console.log('hello development');
+} else {
+  console.log('hello production');
+}
