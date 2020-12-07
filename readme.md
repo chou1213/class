@@ -3,3 +3,5 @@
 3. npx webpack --version  / ./node_modules/.bin/webpack --version
 4. package.json设置script
 5. 配置loader
+6. 配置plugins
+7. 热编译，热刷新

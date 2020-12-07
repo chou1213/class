@@ -1,18 +1,29 @@
 const path = require('path');
-console.log(path.join(__dirname, './dist'));
-module.exports = {
-    entry: './src/index.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.join(__dirname, './dist')
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(scss|sass)$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
-            }
-        ]
-    }
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.join(__dirname, './dist')
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(scss|sass)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
+  },
+  devServer: {
+    hot: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index2.html',
+      template: 'index.html'
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
