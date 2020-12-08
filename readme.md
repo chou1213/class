@@ -1,8 +1,5 @@
-1. npm init -y
-2. npm -i webpack webpack-cli -D
-3. npx webpack --version  / ./node_modules/.bin/webpack --version
-4. package.json设置script
-5. 配置loader
-6. 配置plugins
-7. 热编译，热刷新
-8. mode环境设置
+1. npm i gulp -D
+2. package.json script配置
+3. 配置gulpfile.js
+4. npx gulp --task，查看gulpfile暴露的所有任务
+5. npx gulp 任务名  执行某个任务
