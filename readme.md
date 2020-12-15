@@ -1,5 +1,3 @@
-1. npm i gulp -D
-2. package.json script配置
-3. 配置gulpfile.js
-4. npx gulp --task，查看gulpfile暴露的所有任务
-5. npx gulp 任务名  执行某个任务
+1. 安装npm i -S mongoose
+2. 链接数据库,数据库链接地址：mongodb://用户名:用户密码@主机地址:端口/数据库
+3. mongoose.model 编译第一个数据模型，并插入一条数据
